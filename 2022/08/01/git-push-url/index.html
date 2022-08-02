@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>「git-push-url」推送多个仓库 │ Weykon Page</title><link rel="stylesheet" href="/css/oasis.css"><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Weykon Page" type="application/atom+xml">
+</head><body><div id="content"><h1 id="title">「git-push-url」推送多个仓库</h1><div id="menu-outer"><nav id="menu-inner"><a id="menu-back" href="javascript:history.back()">Back</a><time datetime="2022-08-01T10:20:05.000Z">2022-08-01</time></nav></div><div id="content-outer"><div id="content-inner"><article id="post"><p>当我们有代码推送到多个仓库：</p>
+<ul>
+<li><p>多个remote （常用的是： git remote add origin <git_repo_url>）</p>
+</li>
+<li><p>同一个remote下多个url （类似的是： git remote set-url origin <git_repo_url>）</p>
+</li>
+</ul>
+<p>在 “set-url” 无法做到添加url，而是替换url。</p>
+<p>这个工具就为了简单添加 url ，没错就是这么简单。</p>
+<h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>推送多个仓库</p>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm i git-push-url -g</span><br><span class="line">git-push-url add https://github.com/user/repo.git</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">or</span></span><br><span class="line">git-push-url remove https://github.com/user/repo.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><blockquote>
+<p>改变了一下当前目录的 <strong>“.&#x2F;.git&#x2F;config”</strong> 文件里面的 remote 内容，添加 url 或 删除 url。</p>
+</blockquote>
+</article><div id="paginator"></div></div></div><div id="bottom-outer"><div id="bottom-inner"><hr><div><div><a>2022@ Weykon Kong</a><a target="_blank" rel="noopener" href="https://github.com/weykon"><img src="/assets/github.png"></a></div><div id="hexo"><a>Powered by&nbsp</a><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><a>&nbsp&&nbsp</a><a target="_blank" rel="noopener" href="https://github.com/qiantao94/hexo-theme-oasis">Oasis</a></div></div></div></div></div></body><script src="/js/oasis.js"></script></html>
