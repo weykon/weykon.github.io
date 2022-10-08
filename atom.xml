@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-08T17:26:41.541Z</updated>
+  <updated>2022-10-08T19:21:22.448Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 vscode 窗口化的禅模式</title>
+    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
+    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
+    <published>2022-08-01T10:20:05.000Z</published>
+    <updated>2022-10-08T19:21:22.448Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
+&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
+&lt;pre class=</summary>
+      
+    
+    
+    
+    
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
+  </entry>
   
   <entry>
     <title>「git-push-url」推送多个仓库</title>
@@ -33,31 +58,6 @@
 &lt;li&gt;&lt;p&gt;多个remote （常用的是： git remote add origin &lt;git_repo_url&gt;）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;同一个remote下多个url （类似的是： git remote s</summary>
-      
-    
-    
-    
-    
-    <category term="tool" scheme="http://example.com/tags/tool/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 vscode 窗口化的禅模式</title>
-    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
-    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
-    <published>2022-08-01T10:20:05.000Z</published>
-    <updated>2022-10-08T18:23:28.196Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
-&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
-&lt;pre class=</summary>
       
     
     
