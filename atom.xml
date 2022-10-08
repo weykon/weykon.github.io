@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-10T19:25:07.694Z</updated>
+  <updated>2022-10-08T17:26:41.541Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/08/01/git-push-url/"/>
     <id>http://example.com/2022/08/01/git-push-url/</id>
     <published>2022-08-01T10:20:05.000Z</published>
-    <updated>2022-08-10T19:25:07.694Z</updated>
+    <updated>2022-10-08T17:26:41.541Z</updated>
     
-    <content type="html"><![CDATA[<p>当我们有代码推送到多个仓库：</p><ul><li><p>多个remote （常用的是： git remote add origin <git_repo_url>）</p></li><li><p>同一个remote下多个url （类似的是： git remote set-url origin <git_repo_url>）</p></li></ul><p>在 “set-url” 无法做到添加url，而是替换url。</p><p>这个工具就为了简单添加 url ，没错就是这么简单。</p><h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>推送多个仓库</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm i git-push-url -g</span><br><span class="line">git-push-url add https://github.com/user/repo.git</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">or</span></span><br><span class="line">git-push-url remove https://github.com/user/repo.git</span><br></pre></td></tr></table></figure><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><blockquote><p>改变了一下当前目录的 <strong>“.&#x2F;.git&#x2F;config”</strong> 文件里面的 remote 内容，添加 url 或 删除 url。</p></blockquote><p>欢迎来提 PR 和 issues.</p>]]></content>
+    <content type="html"><![CDATA[<p>当我们有代码推送到多个仓库：</p><ul><li><p>多个remote （常用的是： git remote add origin <git_repo_url>）</p></li><li><p>同一个remote下多个url （类似的是： git remote set-url origin <git_repo_url>）</p></li></ul><p>在 “set-url” 无法做到添加url，而是替换url。</p><p>这个工具就为了简单添加 url ，没错就是这么简单。</p><h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>推送多个仓库</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i git-push-url -ggit-push-url <span class="token function">add</span> https://github.com/user/repo.git<span class="token comment">#or</span>git-push-url remove https://github.com/user/repo.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><blockquote><p>改变了一下当前目录的 <strong>“.&#x2F;.git&#x2F;config”</strong> 文件里面的 remote 内容，添加 url 或 删除 url。</p></blockquote><p>欢迎来提 PR 和 issues.</p><p>github: <a href="https://github.com/weykon/git-push-url">https://github.com/weykon/git-push-url</a></p>]]></content>
     
     
       
@@ -38,6 +38,33 @@
     
     
     
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 vscode 窗口化的禅模式</title>
+    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
+    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
+    <published>2022-08-01T10:20:05.000Z</published>
+    <updated>2022-10-08T18:23:28.196Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
+&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
+&lt;pre class=</summary>
+      
+    
+    
+    
+    
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
   </entry>
   
   <entry>
@@ -45,9 +72,9 @@
     <link href="http://example.com/2022/08/01/git-push-url(en)/"/>
     <id>http://example.com/2022/08/01/git-push-url(en)/</id>
     <published>2022-08-01T10:20:05.000Z</published>
-    <updated>2022-08-10T19:36:21.167Z</updated>
+    <updated>2022-10-08T17:43:46.361Z</updated>
     
-    <content type="html"><![CDATA[<p>when we want to push multiple repo:</p><ul><li><p>multiple remote (the commonly used： git remote add origin <git_repo_url>)</p></li><li><p>multiple urls below same remote (similarly: git remote set-url origin <git_repo_url>)</p></li></ul><p>In “set-url” can’t add urls, it just replace url.</p><p>The purpose of this tool is to simply add urls, and yes, it is that simple.</p><h2 id="Use-For"><a href="#Use-For" class="headerlink" title="Use For"></a>Use For</h2><p>Push multiple repositories</p><h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm i git-push-url -g</span><br><span class="line">git-push-url add https://github.com/user/repo.git</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">or</span></span><br><span class="line">git-push-url remove https://github.com/user/repo.git</span><br></pre></td></tr></table></figure><h2 id="Principle"><a href="#Principle" class="headerlink" title="Principle"></a>Principle</h2><blockquote><p>Changed the remote content in the <strong>“.&#x2F;.git&#x2F;config”</strong> file in the current directory, adding or removing the URL.</p></blockquote><p>Welcome to contribute. </p><p>github: <a href="https://github.com/weykon/git-push-url">https://github.com/weykon/git-push-url</a></p>]]></content>
+    <content type="html"><![CDATA[<p>when we want to push multiple repo:</p><ul><li><p>multiple remote (the commonly used： git remote add origin <git_repo_url>)</p></li><li><p>multiple urls below same remote (similarly: git remote set-url origin <git_repo_url>)</p></li></ul><p>In “set-url” can’t add urls, it just replace url.</p><p>The purpose of this tool is to simply add urls, and yes, it is that simple.</p><h2 id="Use-For"><a href="#Use-For" class="headerlink" title="Use For"></a>Use For</h2><p>Push multiple repositories</p><h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i git-push-url -ggit-push-url <span class="token function">add</span> https://github.com/user/repo.git<span class="token comment">#or</span>git-push-url remove https://github.com/user/repo.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="Principle"><a href="#Principle" class="headerlink" title="Principle"></a>Principle</h2><blockquote><p>Changed the remote content in the <strong>“.&#x2F;.git&#x2F;config”</strong> file in the current directory, adding or removing the URL.</p></blockquote><p>Welcome to contribute. </p><p>github: <a href="https://github.com/weykon/git-push-url">https://github.com/weykon/git-push-url</a></p>]]></content>
     
     
       
@@ -73,7 +100,7 @@
     <published>2022-07-28T08:37:25.510Z</published>
     <updated>2022-08-10T19:33:40.560Z</updated>
     
-    <content type="html"><![CDATA[<!-- https://readme-typing-svg.herokuapp.com/demo/ --><h3 align=center>  Welcome to Weykon's profile!    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"></h3><p align="center">  <a herf="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Shadows+Into+Light&size=30&height=250px&width=500px&pause=500&color=15C800&background=000000&center=true&vCenter=true&lines=i+love+the+code+world+!"></a></p><img align="right" width="49%" src="https://github-readme-stats.vercel.app/api?username=weykon&theme=solarized-light&show_icons=true&count_private=true&include_all_commits=true"><p><strong>About me:</strong></p><ul><li>I’m currently learning Rust and Machine learning (Python) .</li><li>game maker.</li></ul><hr><h3 id="Using-and-Doing"><a href="#Using-and-Doing" class="headerlink" title="Using and Doing"></a>Using and Doing</h3><p><img src="http://img.shields.io/badge/-Rust-D2B48?style=flat-square&logo=Rust&logoColor=000000" alt="Rust"><br><img src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=ffff4a&color=d1b01f" alt="JavaScript"><br><img src="http://img.shields.io/badge/-Typescript-ff69b4?style=flat-square&logo=Typescript&logoColor=white" alt="Typescript"><br><img src="http://img.shields.io/badge/-Python-purple?style=flat-square&logo=Python&logoColor=pink" alt="Python">  </p><p><img src="http://img.shields.io/badge/-Maya-48A0A3?style=flat-square&logo=Maya&logoColor=5AAEAF" alt="Maya"></p><p><strong>Job:</strong></p><ul><li>a front-end engineer. <img src="https://img.shields.io/badge/%20-React-blue"></li><li>game maker with cocos creator (part-time).</li><li>come to be open-source programmer.</li></ul><hr><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=weykon&layout=compact"><!--START_SECTION:waka--><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">TypeScript   28 hrs 1 min    █████████████▒░░░░░░░░░░░   52.68 %</span><br><span class="line">Rust         10 hrs 35 mins  █████░░░░░░░░░░░░░░░░░░░░   19.90 %</span><br><span class="line">Markdown     6 hrs 53 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   12.95 %</span><br><span class="line">Pug          1 hr 23 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.63 %</span><br><span class="line">JavaScript   1 hr 17 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.42 %</span><br><span class="line">EJS          1 hr 4 mins     ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.02 %</span><br></pre></td></tr></table></figure><!--END_SECTION:waka--><p><img src="/./metrics.plugin.code.svg" alt="code the day"></p><div align=center>  <p> you are visitor </p>  <img src="https://profile-counter.glitch.me/weykon/count.svg"></div>]]></content>
+    <content type="html"><![CDATA[<!-- https://readme-typing-svg.herokuapp.com/demo/ --><h3 align=center>  Welcome to Weykon's profile!    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"></h3><p align="center">  <a herf="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Shadows+Into+Light&size=30&height=250px&width=500px&pause=500&color=15C800&background=000000&center=true&vCenter=true&lines=i+love+the+code+world+!"></a></p><img align="right" width="49%" src="https://github-readme-stats.vercel.app/api?username=weykon&theme=solarized-light&show_icons=true&count_private=true&include_all_commits=true"><p><strong>About me:</strong></p><ul><li>I’m currently learning Rust and Machine learning (Python) .</li><li>game maker.</li></ul><hr><h3 id="Using-and-Doing"><a href="#Using-and-Doing" class="headerlink" title="Using and Doing"></a>Using and Doing</h3><p><img src="http://img.shields.io/badge/-Rust-D2B48?style=flat-square&logo=Rust&logoColor=000000" alt="Rust"><br><img src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=ffff4a&color=d1b01f" alt="JavaScript"><br><img src="http://img.shields.io/badge/-Typescript-ff69b4?style=flat-square&logo=Typescript&logoColor=white" alt="Typescript"><br><img src="http://img.shields.io/badge/-Python-purple?style=flat-square&logo=Python&logoColor=pink" alt="Python">  </p><p><img src="http://img.shields.io/badge/-Maya-48A0A3?style=flat-square&logo=Maya&logoColor=5AAEAF" alt="Maya"></p><p><strong>Job:</strong></p><ul><li>a front-end engineer. <img src="https://img.shields.io/badge/%20-React-blue"></li><li>game maker with cocos creator (part-time).</li><li>come to be open-source programmer.</li></ul><hr><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=weykon&layout=compact"><!--START_SECTION:waka--><pre class="line-numbers language-text" data-language="text"><code class="language-text">TypeScript   28 hrs 1 min    █████████████▒░░░░░░░░░░░   52.68 %Rust         10 hrs 35 mins  █████░░░░░░░░░░░░░░░░░░░░   19.90 %Markdown     6 hrs 53 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   12.95 %Pug          1 hr 23 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.63 %JavaScript   1 hr 17 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.42 %EJS          1 hr 4 mins     ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.02 %<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><!--END_SECTION:waka--><p><img src="/./metrics.plugin.code.svg" alt="code the day"></p><div align=center>  <p> you are visitor </p>  <img src="https://profile-counter.glitch.me/weykon/count.svg"></div>]]></content>
     
     
       
