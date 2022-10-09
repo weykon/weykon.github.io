@@ -42,32 +42,6 @@
   </entry>
   
   <entry>
-    <title>「git-push-url」推送多个仓库</title>
-    <link href="http://example.com/2022/08/01/git-push-url/"/>
-    <id>http://example.com/2022/08/01/git-push-url/</id>
-    <published>2022-08-01T10:20:05.000Z</published>
-    <updated>2022-10-08T17:26:41.541Z</updated>
-    
-    <content type="html"><![CDATA[<p>当我们有代码推送到多个仓库：</p><ul><li><p>多个remote （常用的是： git remote add origin <git_repo_url>）</p></li><li><p>同一个remote下多个url （类似的是： git remote set-url origin <git_repo_url>）</p></li></ul><p>在 “set-url” 无法做到添加url，而是替换url。</p><p>这个工具就为了简单添加 url ，没错就是这么简单。</p><h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>推送多个仓库</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i git-push-url -ggit-push-url <span class="token function">add</span> https://github.com/user/repo.git<span class="token comment">#or</span>git-push-url remove https://github.com/user/repo.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><blockquote><p>改变了一下当前目录的 <strong>“.&#x2F;.git&#x2F;config”</strong> 文件里面的 remote 内容，添加 url 或 删除 url。</p></blockquote><p>欢迎来提 PR 和 issues.</p><p>github: <a href="https://github.com/weykon/git-push-url">https://github.com/weykon/git-push-url</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;当我们有代码推送到多个仓库：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;多个remote （常用的是： git remote add origin &lt;git_repo_url&gt;）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;同一个remote下多个url （类似的是： git remote s</summary>
-      
-    
-    
-    
-    
-    <category term="tool" scheme="http://example.com/tags/tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>「git-push-url」Push multiple repositories (en)</title>
     <link href="http://example.com/2022/08/01/git-push-url(en)/"/>
     <id>http://example.com/2022/08/01/git-push-url(en)/</id>
@@ -84,6 +58,32 @@
 &lt;li&gt;&lt;p&gt;multiple remote (the commonly used： git remote add origin &lt;git_repo_url&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;</summary>
+      
+    
+    
+    
+    
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「git-push-url」推送多个仓库</title>
+    <link href="http://example.com/2022/08/01/git-push-url/"/>
+    <id>http://example.com/2022/08/01/git-push-url/</id>
+    <published>2022-08-01T10:20:05.000Z</published>
+    <updated>2022-10-08T17:26:41.541Z</updated>
+    
+    <content type="html"><![CDATA[<p>当我们有代码推送到多个仓库：</p><ul><li><p>多个remote （常用的是： git remote add origin <git_repo_url>）</p></li><li><p>同一个remote下多个url （类似的是： git remote set-url origin <git_repo_url>）</p></li></ul><p>在 “set-url” 无法做到添加url，而是替换url。</p><p>这个工具就为了简单添加 url ，没错就是这么简单。</p><h2 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h2><p>推送多个仓库</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i git-push-url -ggit-push-url <span class="token function">add</span> https://github.com/user/repo.git<span class="token comment">#or</span>git-push-url remove https://github.com/user/repo.git<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><blockquote><p>改变了一下当前目录的 <strong>“.&#x2F;.git&#x2F;config”</strong> 文件里面的 remote 内容，添加 url 或 删除 url。</p></blockquote><p>欢迎来提 PR 和 issues.</p><p>github: <a href="https://github.com/weykon/git-push-url">https://github.com/weykon/git-push-url</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;当我们有代码推送到多个仓库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;多个remote （常用的是： git remote add origin &lt;git_repo_url&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;同一个remote下多个url （类似的是： git remote s</summary>
       
     
     
