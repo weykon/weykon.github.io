@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-09T06:36:51.001Z</updated>
+  <updated>2022-10-09T21:21:54.995Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>想要简洁美美哒的 VSCode 布局吗？</title>
+    <link href="http://example.com/2022/10/10/window-zen-mode%E5%AE%A3%E4%BC%A0/"/>
+    <id>http://example.com/2022/10/10/window-zen-mode%E5%AE%A3%E4%BC%A0/</id>
+    <published>2022-10-09T19:20:05.000Z</published>
+    <updated>2022-10-09T21:21:54.995Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道大家是否有使用过 vscode 自带的 <em>禅模式</em> 布局？</p><p>可以让你专注于写代码。</p><p>这样在有限的屏幕里，寻求 🎵 <em><strong>更宁静、纯粹的视觉</strong></em> ✍️ 来保持我们的思考。</p><p>我常常使用 vscode 写 markdown文件，而常常被冗余的状态布局夺取了注意力，所以我会打开 <em>vscode 禅模式</em> 。</p><p>但是，<del>vscode自带的禅模式是全屏</del> ，而我更倾向 <em><strong>窗口化</strong></em> 编辑，所以我们有了这个插件。</p><blockquote><p>后来发现设置 setting.json  </p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token property">"zenMode.fullScreen"</span><span class="token operator">:</span> <span class="token boolean">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>就能得到最纯正的窗口禅模式 🙈<br>这个包或许可以废弃了</p></blockquote><hr><h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p><img src="/images/%5Bwindow-zen-mode%E5%AE%A3%E4%BC%A0%5Dpreview.png" alt="img"></p><h2 id="1-所以赶紧来试试"><a href="#1-所以赶紧来试试" class="headerlink" title="1. 所以赶紧来试试"></a>1. <strong>所以赶紧来试试</strong></h2><p><a href="https://marketplace.visualstudio.com/items?itemName=Weykon.window-zen-mode&ssr=false#overview">点击安装，快速快活!</a>  (🔥🔥🔥强烈推荐)</p><h2 id="2-使用方法："><a href="#2-使用方法：" class="headerlink" title="2. 使用方法："></a>2. 使用方法：</h2><p><a href="https://github.com/weykon/window-zen-mode/blob/main/README.md">安装了看看怎么用</a><br>(🔥🔥🔥强烈推荐配合 <em>快捷键</em> 使用)   </p><hr><p>另外，欢迎大家：</p><blockquote><p>给我提个 <u><a href="https://github.com/weykon/window-zen-mode/issues">建议</a> 或 <a href="https://github.com/weykon/window-zen-mode/pulls">贡献</a></u><br>如果不方便可以使用 gitee: <u><a href="https://gitee.com/weykon/window-zen-mode/issues">建议</a> 或 <a href="https://gitee.com/weykon/window-zen-mode/pulls">贡献</a></u></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;不知道大家是否有使用过 vscode 自带的 &lt;em&gt;禅模式&lt;/em&gt; 布局？&lt;/p&gt;
+&lt;p&gt;可以让你专注于写代码。&lt;/p&gt;
+&lt;p&gt;这样在有限的屏幕里，寻求 🎵 &lt;em&gt;&lt;strong&gt;更宁静、纯粹的视觉&lt;/strong&gt;&lt;/em&gt; ✍️ 来保持我们的思考。&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
+  </entry>
   
   <entry>
     <title>「window-zen-mode」vscode extension</title>
@@ -30,6 +55,31 @@
       
     <summary type="html">&lt;h1 id=&quot;Window-Zen-Mode&quot;&gt;&lt;a href=&quot;#Window-Zen-Mode&quot; class=&quot;headerlink&quot; title=&quot;Window Zen Mode&quot;&gt;&lt;/a&gt;Window Zen Mode&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 vscode 窗口化的禅模式</title>
+    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
+    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
+    <published>2022-08-01T10:20:05.000Z</published>
+    <updated>2022-10-08T19:21:22.448Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
+&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
+&lt;pre class=</summary>
       
     
     
@@ -56,31 +106,6 @@
 &lt;li&gt;&lt;p&gt;multiple remote (the commonly used： git remote add origin &lt;git_repo_url&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;</summary>
-      
-    
-    
-    
-    
-    <category term="tool" scheme="http://example.com/tags/tool/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 vscode 窗口化的禅模式</title>
-    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
-    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
-    <published>2022-08-01T10:20:05.000Z</published>
-    <updated>2022-10-08T19:21:22.448Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
-&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
-&lt;pre class=</summary>
       
     
     
