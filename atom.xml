@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-08T19:21:22.448Z</updated>
+  <updated>2022-10-09T06:36:51.001Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,21 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用 vscode 窗口化的禅模式</title>
-    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
-    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
-    <published>2022-08-01T10:20:05.000Z</published>
-    <updated>2022-10-08T19:21:22.448Z</updated>
+    <title>「window-zen-mode」vscode extension</title>
+    <link href="http://example.com/2022/10/09/My%20VSCode%20Extension%20-%20window-zen-mode/"/>
+    <id>http://example.com/2022/10/09/My%20VSCode%20Extension%20-%20window-zen-mode/</id>
+    <published>2022-10-09T06:27:52.000Z</published>
+    <updated>2022-10-09T06:36:51.001Z</updated>
     
-    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="Window-Zen-Mode"><a href="#Window-Zen-Mode" class="headerlink" title="Window Zen Mode"></a>Window Zen Mode</h1><blockquote><p><a href="https://marketplace.visualstudio.com/items?itemName=Weykon.window-zen-mode">market</a> | <a href="https://github.com/weykon/window-zen-mode.git">github repo</a>  </p></blockquote><p>I like to do programing in a clean windowed and eazy take it, so I build this.</p><p>This extension can toggle zen mode as windowed.</p><h2 id="The-first-time-to-use"><a href="#The-first-time-to-use" class="headerlink" title="The first time to use:"></a>The first time to use:</h2><pre class="line-numbers language-none"><code class="language-none">shift + cmd(ctrl) + p   &#x2F;&#x2F; open command input<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>type in</p><blockquote><p><strong>Window Zen Mode</strong></p></blockquote><p>enter ⏎</p><p>🎉 Succeed!</p><hr><h2 id="the-Best-way-to-use"><a href="#the-Best-way-to-use" class="headerlink" title="the Best way to use:"></a>the <strong>Best</strong> way to use:</h2><pre class="line-numbers language-none"><code class="language-none">cmd(ctrl) + k + s    &#x2F;&#x2F; open keybindings<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>search for:</p><blockquote><p><strong>Window Zen Mod</strong></p></blockquote><p>add key binding as you like, such as </p><pre class="line-numbers language-none"><code class="language-none">cmd + opt + k  z<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>because default zen mode keybind is “cmd + k  z”</p></blockquote><p>🎉 Perfect!</p><hr><p><img src="/./images/preview.png" alt="preview"></p><h1 id="🎉-Cute-💻"><a href="#🎉-Cute-💻" class="headerlink" title="🎉 Cute!  💻"></a>🎉 <font color="#ffabd6">Cute!</font>  💻<br /></h1><p>and some valuable key shot:</p><pre><code>    cmd + b            // left side bar    cmd + j            // bottom side bar    cmd + shift + e    // file view    ctrl + shift + g   // git source control</code></pre>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
-&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
-&lt;pre class=</summary>
+    <summary type="html">&lt;h1 id=&quot;Window-Zen-Mode&quot;&gt;&lt;a href=&quot;#Window-Zen-Mode&quot; class=&quot;headerlink&quot; title=&quot;Window Zen Mode&quot;&gt;&lt;/a&gt;Window Zen Mode&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a hr</summary>
       
     
     
@@ -58,6 +56,31 @@
 &lt;li&gt;&lt;p&gt;multiple remote (the commonly used： git remote add origin &lt;git_repo_url&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;</summary>
+      
+    
+    
+    
+    
+    <category term="tool" scheme="http://example.com/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 vscode 窗口化的禅模式</title>
+    <link href="http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/"/>
+    <id>http://example.com/2022/08/01/VSCode%20-%20window%20zen%20mode/</id>
+    <published>2022-08-01T10:20:05.000Z</published>
+    <updated>2022-10-08T19:21:22.448Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用插件达到同时调起多条命令的拓展</p><p>vscode extension:  <strong>multi-command</strong></p><p>“cmd + k  cmd+s”  然后右上角进入文件编辑,<br>添加以下:</p><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>       “key”<span class="token operator">:</span> “cmd+k shift+z”<span class="token punctuation">,</span>       “command”<span class="token operator">:</span> “extension.multiCommand.execute”<span class="token punctuation">,</span>       “args”<span class="token operator">:</span> <span class="token punctuation">&#123;</span>            “sequence”<span class="token operator">:</span> <span class="token punctuation">[</span>               “workbench.action.toggleStatusbarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleTabsVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleActivityBarVisibility”<span class="token punctuation">,</span>               “workbench.action.toggleSidebarVisibility”<span class="token punctuation">,</span>               “editor.action.toggleMinimap”           <span class="token punctuation">]</span>       <span class="token punctuation">&#125;</span>   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用插件达到同时调起多条命令的拓展&lt;/p&gt;
+&lt;p&gt;vscode extension:  &lt;strong&gt;multi-command&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“cmd + k  cmd+s”  然后右上角进入文件编辑,&lt;br&gt;添加以下:&lt;/p&gt;
+&lt;pre class=</summary>
       
     
     
